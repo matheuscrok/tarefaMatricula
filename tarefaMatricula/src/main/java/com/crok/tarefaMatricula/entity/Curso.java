@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 /**
  * @author CROK
@@ -44,9 +45,6 @@ public class Curso {
 	 * duas entidades onde uma não é componente da outra, ao contrário da definição acima.
 	 * @JoinColumn(name ="curso_id") =  indica que a classe na qual você está utilizando-a é a dona ou o lado forte do relacionamento.
 	 */
-	@OneToMany
-	private List<Turma> turmas = new ArrayList<>();
-
 	public String getNome() {
 		return nome;
 	}
