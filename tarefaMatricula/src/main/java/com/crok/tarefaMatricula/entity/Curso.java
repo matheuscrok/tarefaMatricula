@@ -1,7 +1,5 @@
 package com.crok.tarefaMatricula.entity;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -45,8 +43,7 @@ public class Curso {
 	 * @JoinColumn(name ="curso_id") =  indica que a classe na qual você está utilizando-a é a dona ou o lado forte do relacionamento.
 	 */
 	@OneToMany
-	@JoinColumn(name ="curso_id")
-	private List<Turma> turmas = new ArrayList<>();//nome do atributo quando for lista colocar no plural "cursos"
+	private Turma turmas;
 
 	public String getNome() {
 		return nome;
