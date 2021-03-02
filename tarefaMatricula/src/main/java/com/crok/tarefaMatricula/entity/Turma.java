@@ -45,7 +45,7 @@ public class Turma {
 	 * @JoinColumn(name ="nome da classe_id") =  indica que a classe na qual você está utilizando-a é a dona ou o lado forte do relacionamento.
 	 */
 	@ManyToOne
-	private Curso cursos; 
+	private Curso curso; 
 
 	public String getNome() {
 		return nome;
