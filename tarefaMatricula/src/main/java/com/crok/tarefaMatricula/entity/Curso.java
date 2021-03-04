@@ -41,7 +41,6 @@ public class Curso {
 	
 	/**
 	 * @ManyToOne= Esta anotação define uma associação com outra entidade que tenha a multiplicidade de muitos-para-um.
-	 * @OneToMany = A anotação One-to-One é utilizada para associar 
 	 * duas entidades onde uma não é componente da outra, ao contrário da definição acima.
 	 * @JoinColumn(name ="curso_id") =  indica que a classe na qual você está utilizando-a é a dona ou o lado forte do relacionamento.
 	 */
